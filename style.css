@@ -16,7 +16,7 @@ h1, h2 {
   font-weight: 500;
   font-style: italic;
 }
-
+/* 
 a {
   font-family: 'Roboto Mono', monospace;
   color: rgb(0, 215, 0); 
@@ -24,7 +24,7 @@ a {
 
 a:hover {
   color: rgb(233, 0, 233);
-}
+} */
 
 .container {
   font-family: 'Roboto Mono', monospace;
@@ -33,6 +33,18 @@ a:hover {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+}
+
+a {
+  /* color: rgb(72, 253, 254); */
+  color: rgb(233, 0, 233);
+  font-weight: 700;
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(72, 253, 254);
+  font-weight: 700;
+  text-decoration: none;
 }
 
 span.cli-prefix {
