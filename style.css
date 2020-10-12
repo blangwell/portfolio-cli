@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,500;0,700;1,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 body {
@@ -13,10 +13,9 @@ body {
 h1, h2 {
   color: rgb(0, 215, 0); 
   font-family: 'Roboto Mono', monospace;
-  font-weight: 600;
+  font-weight: 500;
   font-style: italic;
 }
-
 
 a {
   font-family: 'Roboto Mono', monospace;
@@ -27,9 +26,6 @@ a:hover {
   color: rgb(233, 0, 233);
 }
 
-/* .project-item {
-} */
-
 .container {
   font-family: 'Roboto Mono', monospace;
   color: rgb(0, 215, 0); 
@@ -37,5 +33,24 @@ a:hover {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+}
 
+span.cli-prefix {
+  font-weight: 700;
+}
+
+span.dir-name {
+  color: rgb(72, 253, 254);
+}
+
+span.git-name {
+  color: rgb(94, 103, 253);
+}
+
+span.branch-name {
+  color: rgb(255, 98, 94);
+}
+
+.project-screenshot {
+  max-width: 400px; 
 }
