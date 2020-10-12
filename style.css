@@ -66,3 +66,8 @@ span.branch-name {
 .project-screenshot {
   max-width: 400px; 
 }
+
+h2.project-title {
+  color: rgb(72, 253, 254);
+  font-size: 17px;
+}
