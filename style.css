@@ -7,15 +7,16 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  /* align-items: center; */
+  /* cursor: url('./images/cursorTrans.png'), auto; */
 }
 
-h1, h2 {
+/* h1, h2 {
   color: rgb(0, 215, 0); 
   font-family: 'Roboto Mono', monospace;
   font-weight: 500;
   font-style: italic;
-}
+} */
 /* 
 a {
   font-family: 'Roboto Mono', monospace;
@@ -70,4 +71,5 @@ span.branch-name {
 h2.project-title {
   color: rgb(72, 253, 254);
   font-size: 17px;
+  font-style: none;
 }
