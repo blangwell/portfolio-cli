@@ -16,10 +16,7 @@ let i = 0;
 const typing = () => {
 
   if (i < portfolioText.length) {
-    if (portfolioText.charAt(i) === ' ') {
-      portfolioCLI.innerHTML += "&nbsp;"
-    }
-    portfolioCLI.innerText += portfolioText.charAt(i);
+    portfolioCLI.innerHTML += portfolioText.charAt(i);
     i++; 
     setTimeout(typing, 100)
   }
