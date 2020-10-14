@@ -59,6 +59,10 @@ h2.project-title {
   font-style: none;
 }
 
-#nav-cat {
+.hidden {
+  display: none;
+}
+
+#nav-cat, #portfolio-cat {
   font-weight: 400;
 }
