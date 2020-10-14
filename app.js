@@ -41,4 +41,5 @@ window.addEventListener('DOMContentLoaded', (e) => {
   if (document.title == 'Contact') {
     typing(contactCat, contactTxt, 0, contactLinks)
   }
+  
 })
