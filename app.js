@@ -7,21 +7,33 @@
 
 // heading.addEventListener('click', titleClick)
 
-const portfolioText = "cat portfolio.txt"
-
+const portfolioTxt = "cat portfolio.txt"
+const navTxt = "cat navigation.txt"
 // const cliCommand = document.querySelector('.cli-command');
-const portfolioCLI = document.getElementById('portfolioCLI');
+const portfolioCat = document.getElementById('portfolio-cat');
+const navCat = document.getElementById('nav-cat');
 
-let i = 0;
-const typing = () => {
+// let i = 0;
 
-  if (i < portfolioText.length) {
-    portfolioCLI.innerHTML += portfolioText.charAt(i);
+// const typing = () => {
+//   if (i < portfolioText.length) {
+//     portfolioCLI.innerHTML += portfolioText.charAt(i);
+//     i++; 
+//     setTimeout(typing, 100)
+//   }
+// }
+
+const typing = (elem, string, i) => {
+  if (i < string.length) {
+    elem.innerHTML += string.charAt(i);
     i++; 
-    setTimeout(typing, 100)
+    setTimeout(() => {
+      typing(elem, string, i)
+    }, 100)
   }
 }
 
 window.addEventListener('DOMContentLoaded', (e) => {
-  typing()
+  typing(navCat, navTxt, 0)
+  typing(portfolioCat, portfolioTxt, 0)
 })
