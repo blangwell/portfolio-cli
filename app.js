@@ -13,16 +13,6 @@ const navTxt = "cat navigation.txt"
 const portfolioCat = document.getElementById('portfolio-cat');
 const navCat = document.getElementById('nav-cat');
 
-// let i = 0;
-
-// const typing = () => {
-//   if (i < portfolioText.length) {
-//     portfolioCLI.innerHTML += portfolioText.charAt(i);
-//     i++; 
-//     setTimeout(typing, 100)
-//   }
-// }
-
 const typing = (elem, string, i) => {
   if (i < string.length) {
     elem.innerHTML += string.charAt(i);
@@ -30,10 +20,13 @@ const typing = (elem, string, i) => {
     setTimeout(() => {
       typing(elem, string, i)
     }, 100)
-  }
+  } 
 }
 
 window.addEventListener('DOMContentLoaded', (e) => {
-  typing(navCat, navTxt, 0)
-  typing(portfolioCat, portfolioTxt, 0)
+  // conditional logic to target different pages
+  if (document.title == 'Portfolio') { 
+    typing(navCat, navTxt, 0)
+    typing(portfolioCat, portfolioTxt, 0)
+  }
 })
