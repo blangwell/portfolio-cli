@@ -1,12 +1,15 @@
 const aboutTxt = "cat about.txt"
 const projectsTxt = "cat projects.txt"
+const contactTxt = "ls contact"
 
 const portfolioCat = document.getElementById('portfolio-cat');
 const projectsCat = document.getElementById('projects-cat');
+const contactCat = document.getElementById('contact-cat');
 
 const navLinks = document.querySelector('.nav-links');
 const blurb = document.querySelector('.blurb');
 const projectList = document.querySelector('.project-list');
+const contactLinks = document.querySelector('.contact-links');
 
 const showElem = (elem) => {
   elem.classList.remove('hidden')
@@ -33,5 +36,9 @@ window.addEventListener('DOMContentLoaded', (e) => {
 
   if (document.title == 'Projects') {
     typing(projectsCat, projectsTxt, 0, projectList)
+  }
+
+  if (document.title == 'Contact') {
+    typing(contactCat, contactTxt, 0, contactLinks)
   }
 })
